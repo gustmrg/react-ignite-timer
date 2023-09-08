@@ -44,6 +44,7 @@ const BaseInput = styled.input`
   &:focus {
     box-shadow: none;
     border-color: ${(props) => props.theme['green-500']};
+  }
 `
 
 export const TaskInput = styled(BaseInput)`
