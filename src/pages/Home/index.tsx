@@ -5,13 +5,12 @@ import { NewCycleForm } from './components/NewCycleForm'
 import { FormProvider, useForm } from 'react-hook-form'
 import { zodResolver } from '@hookform/resolvers/zod'
 import * as zod from 'zod'
-
+import { CyclesContext } from '../../contexts/CyclesContext'
 import {
   HomeContainer,
   StartCountdownButton,
   StopCountdownButton,
 } from './styles'
-import { CyclesContext } from '../../contexts/CyclesContext'
 
 const newCycleFormValidationSchema = zod.object({
   task: zod.string().min(1, { message: 'O nome da tarefa é obrigatório' }),
