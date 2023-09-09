@@ -1,4 +1,4 @@
-import { Cycle } from './cycles'
+import { Cycle } from './reducer'
 
 export enum ActionTypes {
   CREATE_NEW_CYCLE = 'CREATE_NEW_CYCLE',
