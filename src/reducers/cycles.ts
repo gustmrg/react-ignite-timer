@@ -12,12 +12,6 @@ interface CyclesState {
   activeCycleId: string | null
 }
 
-export enum ActionTypes {
-  CREATE_NEW_CYCLE = 'CREATE_NEW_CYCLE',
-  INTERRUPT_CYCLE = 'INTERRUPT_CYCLE',
-  MARK_CURRENT_CYCLE_AS_FINISHED = 'MARK_CURRENT_CYCLE_AS_FINISHED',
-}
-
 export function cyclesReducer(state: CyclesState, action: any) {
   switch (action.type) {
     case 'CREATE_NEW_CYCLE':
